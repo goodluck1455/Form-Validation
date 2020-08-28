@@ -22,7 +22,7 @@ let deadLine = new Date(2020, 8, 31, 11, 59);
 let regx = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z])$/;
 
 
-if(fullName.length <=20 || fullName == ""){
+if(fullName.length <=8 || fullName == ""){
     text = "Please enter your full name";
     showValidateForm.innerHTML = text;
     return false;
