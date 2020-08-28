@@ -29,7 +29,7 @@ if(fullName.length <=8 || fullName == ""){
 }
 
 
-if(regx.test(emailAddress) === false || emailAddress === null){
+if(regx.test(emailAddress) === true || emailAddress === null){
     text = "Please enter a valid email address";
     showValidateForm.innerHTML = text;
     return false;
