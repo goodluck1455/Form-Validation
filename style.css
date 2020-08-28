@@ -63,6 +63,7 @@ button{
 	margin-left:13rem;
 	color:  rgb(248, 244, 244);
 	font-family: "Calibri", 'Trebuchet MS', sans-serif;
+	cursor: pointer;
 }
 label{
 	color: white;
@@ -78,5 +79,41 @@ label{
 	padding: 0px;
 	transition: all 0.8s ease;
 	
+}
+
+/* MEDIA QUERY FOR IPAD GOES HERE....................... */
+@media screen and (max-width:768px){
+	.back{
+	
+		width:50%;
+		margin-top: 16%;
+		margin-left: calc(100% - 70%);
+	}
+}
+
+/* media query for iphone x goes here ---------------------- */
+
+@media screen and (max-width:375px){
+	.back{
+		height: 42rem;
+		width:85%;
+		margin-top: 23%;
+		margin-left: calc(100% - 92%);
+	}
+	button{margin-left:2rem;}
+	#B-pass{margin-left:11rem;}
+
+}
+
+/* media query for galaxy fold goes here */
+@media screen and (max-width:280px){
+	.back{margin-top: 30%;}
+	h3{font-size: 28px;
+		margin-left: 1rem;}
+
+		button{margin-left:1rem;
+			width: 12rem;}
+			#B-pass{margin-left:8rem;}
+
 }
 
