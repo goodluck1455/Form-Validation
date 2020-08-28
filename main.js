@@ -29,7 +29,7 @@ if(fullName.length <=8 || fullName == ""){
 }
 
 
-if(regx.test(emailAddress) === true || emailAddress === null){
+if(regx.test(emailAddress) === true || emailAddress === null || emailAddress === ""){
     text = "Please enter a valid email address";
     showValidateForm.innerHTML = text;
     return false;
@@ -39,7 +39,7 @@ if(mobileNumbers.length <=10){
     showValidateForm.innerHTML = text;
     return false;
 }
-if(dateOfBirth == null){
+if(dateOfBirth == null || dateOfBirth == ""){
     text = "Please enter your Date of birth";
     showValidateForm.innerHTML = text;
     return false;

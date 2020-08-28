@@ -23,7 +23,6 @@ body{
 h3{
 	color: white;
 	font-size: 35px;
-	font-family:  "Calibri", 'Trebuchet MS', sans-serif;
 	padding-top: 2rem;
 	text-align: center;
 	font-family: 'Lobster', cursive;
@@ -95,13 +94,13 @@ label{
 
 @media screen and (max-width:375px){
 	.back{
-		height: 42rem;
+		height: 45rem;
 		width:85%;
-		margin-top: 23%;
+		margin-top: 29%;
 		margin-left: calc(100% - 92%);
 	}
-	button{margin-left:2rem;}
-	#B-pass{margin-left:11rem;}
+	button{margin-left:1rem;width: 100%;}
+	#B-pass{margin-left:12rem;}
 
 }
 
@@ -112,7 +111,7 @@ label{
 		margin-left: 1rem;}
 
 		button{margin-left:1rem;
-			width: 12rem;}
+			width: 100%;}
 			#B-pass{margin-left:8rem;}
 
 }
