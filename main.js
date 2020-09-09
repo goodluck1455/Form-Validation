@@ -16,9 +16,11 @@ showValidateForm.style.padding = "10px";
 
 let text;
 
+
+
 let currentDate = new Date();
-let commenceDate = new Date(2020, 8, 29, 12,);
-let deadLine = new Date(2020, 8, 31, 11, 59);
+let commenceDate = new Date(2020, 7, 29, 12, 00);
+let deadLine = new Date(2020, 7, 31, 11, 59);
 let regx = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z])$/;
 
 
@@ -50,12 +52,13 @@ if(nationality == null || nationality == "" ){
     return false;
 }
 if(stateOfOrgin == null || stateOfOrgin == "" ){
-    text = "Please enter the name of your Country";
+    text = "Please enter your state of Origin";
     showValidateForm.innerHTML = text;
     return false;
 }
 
- if(currentDate >= commenceDate && currentDate <= deadLine){
+
+ if(currentDate <= commenceDate && currentDate <= deadLine){
      alert("Your registration was successful");
      return true;
  }
@@ -63,7 +66,7 @@ if(stateOfOrgin == null || stateOfOrgin == "" ){
 else{
     alert("Registration period has ended");
     showValidateForm.style.display = "none";
-    
+    return false;
    
 }
 // else{

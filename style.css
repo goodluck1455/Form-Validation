@@ -17,7 +17,7 @@ body{
 	margin-left: calc(100% - 65%);
 	height: 48rem;
 	background-repeat: no-repeat;
-	
+	box-sizing: border-box;
 }
 
 h3{
@@ -47,10 +47,10 @@ input[placeholder]{
 
 
 button{
-	margin-left:4rem;
+	margin-left:1rem;
 	background-color: rgb(233, 71, 7);
 	padding: 10px;
-	width: 14.4rem;
+	width: 100%;
 	border: none;
 	margin-top: 30px;
 	color: white;
@@ -59,10 +59,12 @@ button{
 
 #B-pass{
 	margin-top: 1px;
-	margin-left:13rem;
+	margin-left:15rem;
 	color:  rgb(248, 244, 244);
 	font-family: "Calibri", 'Trebuchet MS', sans-serif;
 	cursor: pointer;
+	width: 100%;
+	position: static;
 }
 label{
 	color: white;
@@ -83,11 +85,12 @@ label{
 /* MEDIA QUERY FOR IPAD GOES HERE....................... */
 @media screen and (max-width:768px){
 	.back{
-	
 		width:50%;
 		margin-top: 16%;
 		margin-left: calc(100% - 70%);
 	}
+	#B-pass{
+		margin-right:8rem;}
 }
 
 /* media query for iphone x goes here ---------------------- */
@@ -97,7 +100,7 @@ label{
 		height: 45rem;
 		width:85%;
 		margin-top: 29%;
-		margin-left: calc(100% - 92%);
+		margin-left: calc(100% - 80%);
 	}
 	button{margin-left:1rem;width: 100%;}
 	#B-pass{margin-left:12rem;}
@@ -106,13 +109,15 @@ label{
 
 /* media query for galaxy fold goes here */
 @media screen and (max-width:280px){
-	.back{margin-top: 30%;}
+	.back{margin-top: 30%; height: auto;}
 	h3{font-size: 28px;
 		margin-left: 1rem;}
 
 		button{margin-left:1rem;
 			width: 100%;}
-			#B-pass{margin-left:8rem;}
+			#B-pass{margin-left:8rem;width: 100%; padding-bottom:1rem;}
+			
 
 }
+
 
